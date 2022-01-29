@@ -1,0 +1,15 @@
+.tab_categories {
+}
+
+.tab_btn {
+  width: 16em;
+  height: 2.5em;
+  border: transparent;
+  color: darkgray;
+  cursor: pointer;
+}
+
+.tab_btn.active {
+  background-color: #4902ce;
+  color: #fff;
+}
