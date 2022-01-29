@@ -16,6 +16,13 @@ const Tab = () => {
       return;
     }
     const categories = [...tabCategories.current.children];
+    page.current = target.className.split(' ')[1];
+
+    changeClassName(categories, target);
+    randerCategory();
+  };
+
+  const changeClassName = (categories, target) => {
     categories.forEach((category) => {
       if (target === category) {
         category.classList.add('active');
@@ -23,8 +30,6 @@ const Tab = () => {
         category.classList.remove('active');
       }
     });
-    page.current = target.className.split(' ')[1];
-    randerCategory();
   };
 
   const randerCategory = () => {
