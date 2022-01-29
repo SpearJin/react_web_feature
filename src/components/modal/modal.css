@@ -1,5 +1,27 @@
 .modal {
   position: relative;
+  width: 100%;
+  height: 15rem;
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.title {
+  position: absolute;
+  top: 0.8em;
+  left: 0.5em;
+  margin: 0;
+  font-size: 1.2rem;
+  z-index: 10;
+}
+
+.modal_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .modal_btn {
@@ -22,7 +44,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  height: 20em;
+  height: 100%;
   background-color: lightgray;
   z-index: 1;
 }

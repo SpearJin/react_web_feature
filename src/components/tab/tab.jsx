@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
 import './tab.css';
 
-const Tab1 = <p>Tap Menu1</p>;
-const Tab2 = <p>Tap Menu2</p>;
-const Tab3 = <p>Tap Menu3</p>;
+const Tab1 = <p>Tap menu ONE</p>;
+const Tab2 = <p>Tap menu TWO</p>;
+const Tab3 = <p>Tap menu THREE</p>;
 
 const Tab = () => {
   const [renderPage, setRenderPage] = useState(Tab1);
@@ -49,12 +49,15 @@ const Tab = () => {
 
   return (
     <div className='tab'>
-      <div className='tab_categories' ref={tabCategories} onClick={onClickTab}>
-        <button className='tab_btn tab1'>Tab1</button>
-        <button className='tab_btn tab2'>Tab2</button>
-        <button className='tab_btn tab3'>Tab3</button>
+      <h1 className='title'>Tab</h1>
+      <div className='tab_container'>
+        <div className='tab_categories' ref={tabCategories} onClick={onClickTab}>
+          <button className='tab_btn tab1'>Tab1</button>
+          <button className='tab_btn tab2'>Tab2</button>
+          <button className='tab_btn tab3'>Tab3</button>
+        </div>
+        <div className='tab_content'>{renderPage}</div>
       </div>
-      <div>{renderPage}</div>
     </div>
   );
 };
