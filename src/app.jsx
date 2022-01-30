@@ -3,6 +3,7 @@ import './app.css';
 
 import Modal from './components/modal/modal';
 import Tab from './components/tab/tab';
+import Tag from './components/tag/tag';
 import Toggle from './components/toggle/toggle';
 
 const App = (props) => (
@@ -10,6 +11,7 @@ const App = (props) => (
     <Toggle />
     <Modal />
     <Tab />
+    <Tag />
   </div>
 );
 
