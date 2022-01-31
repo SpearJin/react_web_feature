@@ -8,13 +8,13 @@ const Tag = (props) => {
     <div className='tag'>
       <h1 className='title'>Tag</h1>
       <div className='tag_container'>
-        <ul className='tag_list' htmlFor='in'>
+        <ul className='tag_list'>
           {tagList.map((tag) => (
             <li className='tag_item'>
               {tag} <span className='tag_item-delete'>x</span>
             </li>
           ))}
-          <input className='tag_input' id='in' type='text' placeholder='Press enter to add tags'></input>
+          <input className='tag_input' type='text' placeholder='Press enter to add tags'></input>
         </ul>
       </div>
     </div>
