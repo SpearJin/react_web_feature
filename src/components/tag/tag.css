@@ -35,10 +35,8 @@
 .tag_item {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 6em;
   margin-left: 0.8em;
-  padding: 0.6em;
+  padding: 0.6em 0.8em;
   border-radius: 8px;
   background-color: #4902ce;
   color: #fff;
@@ -46,8 +44,12 @@
   list-style: none;
 }
 
+.tag_item-text {
+  margin-right: 0.4em;
+}
+
 .tag_item-delete {
-  display: inline-block;
+  display: block;
   width: 1em;
   height: 1em;
   line-height: 1em;
@@ -65,6 +67,5 @@
   border: none;
   font-size: 1rem;
   background-color: #fff;
-  appearance: none;
   outline: none;
 }
