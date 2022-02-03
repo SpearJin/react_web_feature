@@ -1,46 +1,54 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './autoComplete.css';
 
 const AutoComplete = () => {
   const [list, setList] = useState([]);
-  const inputRef = useRef(null);
+  const [myText, setMyText] = useState('');
+
   const autoDatas = ['antique', 'vintage', '중고A급', 'rustic', 'refurbished'];
-  let sortedList = autoDatas.sort();
+  const sortedDatas = useRef(autoDatas.sort());
 
-  const onInputHandler = (e) => {
-    const myText = e.target.value;
-    const filterList = sortedList.filter((item) => {
-      item = item.toLowerCase();
-      return item.includes(myText.toLowerCase());
+  useEffect(() => {
+    const filterdList = sortedDatas.current.filter((data) => {
+      data = data.toLowerCase();
+      return data.includes(myText.toLowerCase());
     });
-
-    if (e.target.value === '') {
-      itemReset();
+    if (myText === '') {
+      listReset();
     } else {
-      setList(filterList);
+      setList(filterdList);
     }
+  }, [myText]);
+
+  const onChangeHandler = (e) => {
+    setMyText(e.target.value);
   };
 
   const onClickItem = (e) => {
-    inputRef.current.value = e.target.textContent;
-    itemReset();
+    setMyText(e.target.innerText);
+    listReset();
   };
 
-  const itemReset = () => {
+  const onSubmitForm = (e) => {
+    e.preventDefault();
+    listReset();
+  };
+
+  const listReset = () => {
     setList([]);
   };
 
   return (
     <div className='autoComplete'>
       <h1 className='title'>AutoComplete</h1>
-      <form className='auto_container'>
+      <div className='auto_container'>
         <div className='auto'>
-          <div className='auto_input_container' onBlur={itemReset}>
-            <input ref={inputRef} className='auto_input' type='text' onInput={onInputHandler} />
-            <div className='auto_cancle' onClick={itemReset}>
+          <form className='auto_input_container' onBlur={listReset} onSubmit={onSubmitForm}>
+            <input className='auto_input' type='text' value={myText} onChange={onChangeHandler} />
+            <div className='auto_cancle' onClick={listReset}>
               x
             </div>
-          </div>
+          </form>
           <ul className='auto_list'>
             {list.map((item, i) => (
               <li key={i} className='auto_item' onMouseDown={onClickItem}>
@@ -49,7 +57,7 @@ const AutoComplete = () => {
             ))}
           </ul>
         </div>
-      </form>
+      </div>
     </div>
   );
 };
