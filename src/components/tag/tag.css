@@ -41,13 +41,14 @@
   border-radius: 8px;
   background-color: #4902ce;
   color: #fff;
-
   font-size: 0.8rem;
+  box-shadow: inset 2px 2px 0px #000;
   list-style: none;
 }
 
 .tag_item-text {
   margin-right: 0.4em;
+  text-shadow: 2px 2px 2px #000;
   white-space: nowrap;
 }
 
@@ -60,6 +61,7 @@
   background-color: #fff;
   color: #000;
   text-align: center;
+  box-shadow: 1px 2px 2px #000;
   cursor: pointer;
 }
 
