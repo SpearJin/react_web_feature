@@ -1,5 +1,6 @@
 import React from 'react';
 import './app.css';
+import AutoComplete from './components/autoComplete/autoComplete';
 
 import Modal from './components/modal/modal';
 import Tab from './components/tab/tab';
@@ -12,6 +13,7 @@ const App = (props) => (
     <Modal />
     <Tab />
     <Tag />
+    <AutoComplete />
   </div>
 );
 

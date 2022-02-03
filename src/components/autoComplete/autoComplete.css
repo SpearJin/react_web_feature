@@ -1,0 +1,41 @@
+.autoComplete {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 15rem;
+  padding-top: 1em;
+  border-bottom: 1px solid lightgray;
+}
+
+.auto_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.auto_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 70%;
+}
+
+.auto_input {
+  width: 100%;
+  padding: 1em 0.8em;
+  border-radius: 12px;
+  border: 2px solid lightgray;
+  font-size: 1rem;
+  outline: none;
+  /* box-shadow: 2px 4px 3px 0px lightgray; */
+}
+
+.auto_cancle {
+  position: absolute;
+  right: 2%;
+}
