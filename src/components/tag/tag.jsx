@@ -13,7 +13,6 @@ const Tag = (props) => {
   };
 
   const onClickTagRemove = (e) => {
-    console.log(e.target);
     const target = e.target.closest('.tag_item');
     target.remove();
   };
