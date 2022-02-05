@@ -21,7 +21,7 @@ const ClickToEdit = () => {
   };
 
   return (
-    <StyledClickEdit className='clickEdit'>
+    <StyledClickEdit>
       <h1 className='title'>ClickToEdit</h1>
       <div className='clickEdit_container'>
         <div className='clickEdit_name edit'>

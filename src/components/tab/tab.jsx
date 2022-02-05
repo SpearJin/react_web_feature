@@ -53,7 +53,7 @@ const Tab = () => {
   };
 
   return (
-    <StyledTab className='tab'>
+    <StyledTab>
       <h1 className='title'>Tab</h1>
       <div className='tab_container'>
         <div className='tab_categories' ref={tabCategories} onClick={onClickTab}>

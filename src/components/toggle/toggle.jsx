@@ -14,7 +14,7 @@ const Toggle = () => {
   };
 
   return (
-    <StyledToggle className='toggle'>
+    <StyledToggle>
       <h1 className='title'>Toggle</h1>
       <div className='toggle_container'>
         <label className='toggle_label'>

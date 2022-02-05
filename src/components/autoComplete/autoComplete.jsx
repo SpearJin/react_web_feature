@@ -39,7 +39,7 @@ const AutoComplete = () => {
   };
 
   return (
-    <StyledAutoComplete className='autoComplete'>
+    <StyledAutoComplete>
       <h1 className='title'>AutoComplete</h1>
       <div className='auto_container'>
         <div className='auto'>

@@ -22,7 +22,7 @@ const Tag = () => {
   };
 
   return (
-    <StyledTag className='tag'>
+    <StyledTag>
       <h1 className='title'>Tag</h1>
       <form className='tag_container' onSubmit={onSubmitTagAdd}>
         <ul className='tag_list'>

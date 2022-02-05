@@ -17,7 +17,7 @@ const Modal = () => {
   };
 
   return (
-    <StyledModal className='modal'>
+    <StyledModal>
       <h1 className='title'>Modal</h1>
       <div className='modal_container'>
         <button className='modal_btn' onClick={onClickModal}>
