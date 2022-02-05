@@ -1,6 +1,7 @@
 import React from 'react';
 import './app.css';
 import AutoComplete from './components/autoComplete/autoComplete';
+import ClickToEdit from './components/clickToEdit/clickToEdit';
 
 import Modal from './components/modal/modal';
 import Tab from './components/tab/tab';
@@ -14,6 +15,7 @@ const App = (props) => (
     <Tab />
     <Tag />
     <AutoComplete />
+    <ClickToEdit />
   </div>
 );
 
