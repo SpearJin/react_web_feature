@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import './modal.css';
+import { StyledModal } from './modal.styled';
 
 const Modal = () => {
   const modal = useRef(null);
@@ -17,7 +17,7 @@ const Modal = () => {
   };
 
   return (
-    <section className='modal'>
+    <StyledModal className='modal'>
       <h1 className='title'>Modal</h1>
       <div className='modal_container'>
         <button className='modal_btn' onClick={onClickModal}>
@@ -30,7 +30,7 @@ const Modal = () => {
           </div>
         </div>
       </div>
-    </section>
+    </StyledModal>
   );
 };
 
