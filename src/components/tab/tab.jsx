@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import './tab.css';
+import { StyledTab } from './tab.styled';
 
 const Tab1 = <p>Tap menu ONE</p>;
 const Tab2 = <p>Tap menu TWO</p>;
@@ -53,7 +53,7 @@ const Tab = () => {
   };
 
   return (
-    <section className='tab'>
+    <StyledTab className='tab'>
       <h1 className='title'>Tab</h1>
       <div className='tab_container'>
         <div className='tab_categories' ref={tabCategories} onClick={onClickTab}>
@@ -63,7 +63,7 @@ const Tab = () => {
         </div>
         <div className='tab_content'>{renderPage}</div>
       </div>
-    </section>
+    </StyledTab>
   );
 };
 
