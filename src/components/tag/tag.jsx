@@ -1,20 +1,24 @@
 import React, { useRef, useState } from 'react';
 import './tag.css';
 
-const Tag = (props) => {
-  const [tagList, setTagList] = useState(['CodeStates', 'JJang']);
+const Tag = () => {
+  const [tagList, setTagList] = useState([
+    { id: 1, text: 'CodeStates' },
+    { id: 2, text: 'JJang' },
+  ]);
   const tagItem = useRef(null);
 
   const onSubmitTagAdd = (e) => {
     e.preventDefault();
-    const tags = [...tagList, tagItem.current.value];
+    const text = tagItem.current.value;
+    const tags = [...tagList, { id: Date.now(), text }];
     setTagList(tags);
     tagItem.current.value = '';
   };
 
-  const onClickTagRemove = (e) => {
-    const target = e.target.closest('.tag_item');
-    target.remove();
+  const onClickTagRemove = (tag) => {
+    const tags = tagList.filter((item) => item.id !== tag.id);
+    setTagList(tags);
   };
 
   return (
@@ -22,10 +26,10 @@ const Tag = (props) => {
       <h1 className='title'>Tag</h1>
       <form className='tag_container' onSubmit={onSubmitTagAdd}>
         <ul className='tag_list'>
-          {tagList.map((tag, i) => (
-            <li className='tag_item' key={i}>
-              <span className='tag_item-text'>{tag}</span>
-              <span className='tag_item-delete' onClick={onClickTagRemove}>
+          {tagList.map((tag) => (
+            <li className='tag_item' key={tag.id}>
+              <span className='tag_item-text'>{tag.text}</span>
+              <span className='tag_item-delete' onClick={() => onClickTagRemove(tag)}>
                 x
               </span>
             </li>
