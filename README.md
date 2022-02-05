@@ -3,11 +3,11 @@
 React.js을 이용하여 기능별로 구현
 ## :date: 프로젝트 기간
 22.01.28 ~ 22.02.09
-## :computer: 배포 주소
+## :paperclip: 배포 주소
 https://61fe197ce12dde9ade326517--stupefied-varahamihira-fe2d21.netlify.app/
 ## :postbox: 깃 주소
 https://github.com/SpearJin/wanted-pre-onboarding
-## 구현
+## :pencil2: 구현
   * Toggle
     * 구현 방법
       * input에 type을 "checkbox"로 설정
