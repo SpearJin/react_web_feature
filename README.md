@@ -1,12 +1,20 @@
 # Wanted_pre_onboarding
+
 ## :raised_hands: 프로젝트 소개
 React.js을 이용하여 기능별로 구현
+
 ## :date: 프로젝트 기간
 22.01.28 ~ 22.02.09
+
+## :clipboard: 기술스택
+<img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white">  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">  <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">  <img src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">
+
 ## :paperclip: 배포 주소
 https://61fe197ce12dde9ade326517--stupefied-varahamihira-fe2d21.netlify.app/
+
 ## :postbox: 깃 주소
 https://github.com/SpearJin/wanted-pre-onboarding
+
 ## :pencil2: 구현
   * Toggle
     * 구현 방법
