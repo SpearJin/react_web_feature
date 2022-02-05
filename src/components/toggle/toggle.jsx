@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './toggle.css';
+import { StyledToggle } from './toggle.styled';
 
 const Toggle = () => {
   const [switchText, setSwitchText] = useState('OFF');
@@ -14,7 +14,7 @@ const Toggle = () => {
   };
 
   return (
-    <section className='toggle'>
+    <StyledToggle className='toggle'>
       <h1 className='title'>Toggle</h1>
       <div className='toggle_container'>
         <label className='toggle_label'>
@@ -23,7 +23,7 @@ const Toggle = () => {
         </label>
         <p>Toggle Switch {switchText}</p>
       </div>
-    </section>
+    </StyledToggle>
   );
 };
 
