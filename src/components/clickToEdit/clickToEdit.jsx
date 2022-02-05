@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react';
-import './clickToEdit.css';
+import React, { useState } from 'react';
+import { StyledClickEdit } from './clickToEdit.styled';
 
-const ClickToEdit = (props) => {
+const ClickToEdit = () => {
   const [name, setName] = useState('김코딩');
   const [age, setAge] = useState(20);
   const [inputName, setInputName] = useState(name);
@@ -21,7 +21,7 @@ const ClickToEdit = (props) => {
   };
 
   return (
-    <section className='clickEdit'>
+    <StyledClickEdit className='clickEdit'>
       <h1 className='title'>ClickToEdit</h1>
       <div className='clickEdit_container'>
         <div className='clickEdit_name edit'>
@@ -42,7 +42,7 @@ const ClickToEdit = (props) => {
           이름 {name} 나이 {age}
         </p>
       </div>
-    </section>
+    </StyledClickEdit>
   );
 };
 
