@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './autoComplete.css';
+import { StyledAutoComplete } from './autoComplete.styled';
 
 const AutoComplete = () => {
   const [list, setList] = useState([]);
@@ -39,7 +39,7 @@ const AutoComplete = () => {
   };
 
   return (
-    <section className='autoComplete'>
+    <StyledAutoComplete className='autoComplete'>
       <h1 className='title'>AutoComplete</h1>
       <div className='auto_container'>
         <div className='auto'>
@@ -58,7 +58,7 @@ const AutoComplete = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </StyledAutoComplete>
   );
 };
 
