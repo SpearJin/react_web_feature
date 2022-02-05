@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import './tag.css';
+import { StyledTag } from './tag.styled';
 
 const Tag = () => {
   const [tagList, setTagList] = useState([
@@ -22,7 +22,7 @@ const Tag = () => {
   };
 
   return (
-    <section className='tag'>
+    <StyledTag className='tag'>
       <h1 className='title'>Tag</h1>
       <form className='tag_container' onSubmit={onSubmitTagAdd}>
         <ul className='tag_list'>
@@ -37,7 +37,7 @@ const Tag = () => {
           <input className='tag_input' ref={tagItem} type='text' placeholder='Press enter to add tags' />
         </ul>
       </form>
-    </section>
+    </StyledTag>
   );
 };
 
