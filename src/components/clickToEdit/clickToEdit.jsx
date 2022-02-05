@@ -21,7 +21,7 @@ const ClickToEdit = (props) => {
   };
 
   return (
-    <div className='clickEdit'>
+    <section className='clickEdit'>
       <h1 className='title'>ClickToEdit</h1>
       <div className='clickEdit_container'>
         <div className='clickEdit_name edit'>
@@ -42,7 +42,7 @@ const ClickToEdit = (props) => {
           이름 {name} 나이 {age}
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

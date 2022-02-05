@@ -17,7 +17,7 @@ const Modal = () => {
   };
 
   return (
-    <div className='modal'>
+    <section className='modal'>
       <h1 className='title'>Modal</h1>
       <div className='modal_container'>
         <button className='modal_btn' onClick={onClickModal}>
@@ -30,7 +30,7 @@ const Modal = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

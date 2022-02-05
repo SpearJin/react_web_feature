@@ -18,7 +18,7 @@ const Tag = (props) => {
   };
 
   return (
-    <div className='tag'>
+    <section className='tag'>
       <h1 className='title'>Tag</h1>
       <form className='tag_container' onSubmit={onSubmitTagAdd}>
         <ul className='tag_list'>
@@ -33,7 +33,7 @@ const Tag = (props) => {
           <input className='tag_input' ref={tagItem} type='text' placeholder='Press enter to add tags' />
         </ul>
       </form>
-    </div>
+    </section>
   );
 };
 

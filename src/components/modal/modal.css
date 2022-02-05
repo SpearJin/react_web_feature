@@ -1,11 +1,3 @@
-.modal {
-  position: relative;
-  width: 100%;
-  height: 15rem;
-  text-align: center;
-  border-bottom: 1px solid lightgray;
-}
-
 .modal_container {
   display: flex;
   justify-content: center;

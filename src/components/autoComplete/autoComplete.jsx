@@ -39,7 +39,7 @@ const AutoComplete = () => {
   };
 
   return (
-    <div className='autoComplete'>
+    <section className='autoComplete'>
       <h1 className='title'>AutoComplete</h1>
       <div className='auto_container'>
         <div className='auto'>
@@ -58,7 +58,7 @@ const AutoComplete = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

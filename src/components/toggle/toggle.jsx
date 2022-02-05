@@ -14,7 +14,7 @@ const Toggle = () => {
   };
 
   return (
-    <div className='toggle'>
+    <section className='toggle'>
       <h1 className='title'>Toggle</h1>
       <div className='toggle_container'>
         <label className='toggle_label'>
@@ -23,7 +23,7 @@ const Toggle = () => {
         </label>
         <p>Toggle Switch {switchText}</p>
       </div>
-    </div>
+    </section>
   );
 };
 

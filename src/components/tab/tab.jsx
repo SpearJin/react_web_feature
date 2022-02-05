@@ -53,7 +53,7 @@ const Tab = () => {
   };
 
   return (
-    <div className='tab'>
+    <section className='tab'>
       <h1 className='title'>Tab</h1>
       <div className='tab_container'>
         <div className='tab_categories' ref={tabCategories} onClick={onClickTab}>
@@ -63,7 +63,7 @@ const Tab = () => {
         </div>
         <div className='tab_content'>{renderPage}</div>
       </div>
-    </div>
+    </section>
   );
 };
 
