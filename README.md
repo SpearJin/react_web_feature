@@ -25,7 +25,7 @@ https://github.com/SpearJin/wanted-pre-onboarding
       * "appearance: none;"을 통해 input 태그를 안 보이게함
     * 실행 방법
       * 버튼이 "ON"이 되면 background와 버튼이 움직이고, "Toggle Switch OFF" => "Toggle Switch ON" 바뀜
-      ![toggle](https://user-images.githubusercontent.com/87363129/152633223-32b68f69-7ee7-4118-b0d1-50fe97ff1f89.gif)
+      ![toggle](https://user-images.githubusercontent.com/87363129/152668443-f29ceb9f-ff1d-4e60-801e-a98c28dd7935.gif)
   * Modal
     * 구현 방법
       * Modal 버튼 클릭시 'active'클래스를 추가함
@@ -35,7 +35,7 @@ https://github.com/SpearJin/wanted-pre-onboarding
       * Modal테그를 처음에는 "display: none;"을 주고 "active" 클래스가 있을시만 "display: block;"으로 줌
     * 실행 방법
       * "Open Modal" 클릭시, Modal창이 나오고, 'x' 클릭시 모달이 닫힘
-      ![modal](https://user-images.githubusercontent.com/87363129/152633587-de4f4974-b001-4464-baf4-5c6767d607b9.gif)
+      ![modal](https://user-images.githubusercontent.com/87363129/152668448-342c99de-5311-4c7d-9a8e-3951742acd5b.gif)
   * Tab
     * 구현 방법
       * Tab1, Tab2, Tab3 각각 컴포넌트를 만듬
@@ -48,7 +48,7 @@ https://github.com/SpearJin/wanted-pre-onboarding
       * 변수를 하나 할당하고, switch문을 이용하여 해당 컴포넌트를 렌더링 하도록 함
     * 실행 방법
       * 각 버튼을 클릭시 서로 다른 내용이 렌더링 됨
-      ![tab](https://user-images.githubusercontent.com/87363129/152634937-82791c59-9bd4-4bba-8fc9-f797f504563d.gif)
+      ![tab](https://user-images.githubusercontent.com/87363129/152668468-338bba9a-d739-49cc-8d7a-0c1b1e8f8271.gif)
  * Tag
      * 구현 방법
        * input태그에 텍스트를 입력하고, submit 이벤트가 실행되면, onSubmitTagAdd 함수를 실행함
@@ -62,7 +62,7 @@ https://github.com/SpearJin/wanted-pre-onboarding
        * ':focus-within'을 이용하여 문제 해결
      * 실행 방법
        * input 태그안에 텍스트를 입력하고 'submit' 이벤트시 해당 리스트에 텍스트가 추가되고, x버큰 클릭시 해당 텍스트가 삭제가 됨
-       ![tag](https://user-images.githubusercontent.com/87363129/152635297-335a8785-a7a6-4a5b-9d95-c16e1f3d2159.gif)
+       ![tag](https://user-images.githubusercontent.com/87363129/152668478-4d5eff11-f8f2-4423-a46b-78fdbdb0fccb.gif)
  * AutoComplete
      * 구현 방법
        * autoDatas라는 더미 데이터를 만듬
@@ -79,7 +79,7 @@ https://github.com/SpearJin/wanted-pre-onboarding
      * 실행 방법
        * input 태그에 텍스트를 입력하면 내가 입력하려는 값을 추천하여 보여준다
        * x버튼 클릭시 추천하는 값이 사라지고, 추천해주는 값을 클릭시 해당 값으로 바뀐다
-       ![auto](https://user-images.githubusercontent.com/87363129/152635664-2b939a9f-a689-4763-8cfd-b9c82e9361e6.gif)
+       ![autoComplete](https://user-images.githubusercontent.com/87363129/152668484-f66a399f-cedf-41ed-9004-27baa35e4ca8.gif)
  * ClickToEdit
      * 구현 방법
        * input 태그에 onChange 이벤트가 일어나면, input태그 안에 value값을 바꿈
@@ -89,7 +89,8 @@ https://github.com/SpearJin/wanted-pre-onboarding
        * p 태그를 나타내는 state값을 하나 더 만들고, blur 이벤트시 input의 value값이 p 태그의 결과값으로 바뀌도록 구현 함
      * 실행 방법
        * 이름, 나이 input 태그에 원하는 텍스트를 입력하고, 다른 곳을 클릭하게 되면, 밑에 결과 값이 바뀐다
-       ![edit](https://user-images.githubusercontent.com/87363129/152635994-6fb71f67-6419-46c0-9465-ac2763df5f99.gif)
+       ![clickToEdit](https://user-images.githubusercontent.com/87363129/152668488-49d0fe12-edd3-4288-8539-dc0d2029d94f.gif)
+
 
 
     
