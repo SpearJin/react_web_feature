@@ -10,6 +10,7 @@ export const StyledModal = styled.section`
     width: 100%;
     height: 100%;
     > .modal_btn {
+      display: ${({ isDisplay }) => (isDisplay ? 'block' : 'none')};
       width: 8em;
       height: 4em;
       border-radius: 40px;
@@ -23,37 +24,35 @@ export const StyledModal = styled.section`
       }
     }
     > .modal_window {
-      display: none;
-      position: absolute;
-      top: 0;
+      display: ${({ isDisplay }) => (isDisplay ? 'none' : 'block')};
       width: 100%;
       height: 100%;
-      background-color: lightgray;
+
       z-index: 1;
-      > .modal_window_container {
+      > .window_container {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        position: absolute;
-        padding: 2em 4em;
-        border-radius: 20px;
-        background-color: #fff;
-        > span {
-          display: inline-block;
-        }
-        > .modal_window_btn {
-          text-align: center;
-          cursor: pointer;
-        }
-        > .modal_window_text {
-          margin-top: 1em;
+        justify-content: center;
+        height: 100%;
+        background-color: lightgray;
+        > .window {
+          display: flex;
+          flex-direction: column;
+          padding: 2em 4em;
+          border-radius: 20px;
+          background-color: #fff;
+          > span {
+            display: inline-block;
+          }
+          > .window_btn {
+            text-align: center;
+            cursor: pointer;
+          }
+          > .window_text {
+            margin-top: 1em;
+          }
         }
       }
-    }
-    > .modal_window.active {
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
   }
 `;
