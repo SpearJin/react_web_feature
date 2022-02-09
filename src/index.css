@@ -17,3 +17,10 @@ section {
   padding-top: 1em;
   border-bottom: 1px solid lightgray;
 }
+
+@media screen and (max-width: 1024px) {
+  section {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}

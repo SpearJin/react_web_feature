@@ -27,7 +27,6 @@ export const StyledModal = styled.section`
       display: ${({ isDisplay }) => (isDisplay ? 'none' : 'block')};
       width: 100%;
       height: 100%;
-
       z-index: 1;
       > .window_container {
         display: flex;
@@ -38,12 +37,10 @@ export const StyledModal = styled.section`
         > .window {
           display: flex;
           flex-direction: column;
+          align-items: center;
           padding: 2em 4em;
           border-radius: 20px;
           background-color: #fff;
-          > span {
-            display: inline-block;
-          }
           > .window_btn {
             text-align: center;
             cursor: pointer;
@@ -53,6 +50,16 @@ export const StyledModal = styled.section`
           }
         }
       }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    > .title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .window {
+      margin-top: 3em;
     }
   }
 `;

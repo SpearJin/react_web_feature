@@ -13,11 +13,13 @@ export const StyledTag = styled.section`
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      max-height: 70%;
       row-gap: 10px;
       width: 70%;
       padding: 0.5em 0;
       border-radius: 8px;
       border: 2px solid lightgray;
+      overflow: auto;
       > .tag_item {
         display: flex;
         align-items: center;

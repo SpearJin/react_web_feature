@@ -66,4 +66,8 @@ export const StyledAutoComplete = styled.section`
       box-shadow: 2px 4px 3px 0px lightgray;
     }
   }
+  @media screen and (max-width: 1024px) {
+    justify-content: flex-start;
+    align-items: center;
+  }
 `;

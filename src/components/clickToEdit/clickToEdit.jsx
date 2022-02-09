@@ -25,7 +25,7 @@ const ClickToEdit = () => {
       <h1 className='title'>ClickToEdit</h1>
       <div className='clickEdit_container'>
         <div className='clickEdit_name edit'>
-          <span>이름</span>
+          <span className='text'>이름</span>
           <input
             className='clickEdit_input'
             type='text'
