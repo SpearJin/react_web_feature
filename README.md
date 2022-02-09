@@ -1,7 +1,7 @@
 # Wanted_pre_onboarding
 
 ## :raised_hands: 프로젝트 소개
-React.js을 이용하여 기능별로 구현
+React.js을 이용하여 **(Toggle, Modal, Tab, Tag, AutoComplete, ClickToEdit)** 기능 구현
 
 ## :date: 프로젝트 기간
 22.01.28 ~ 22.02.09
@@ -13,6 +13,7 @@ React.js을 이용하여 기능별로 구현
 https://61fe197ce12dde9ade326517--stupefied-varahamihira-fe2d21.netlify.app/
 
 ## :pencil2: 구현
+  * width: 1024px 기준으로 반응형 구현
   * Toggle
     * 구현 방법
       * input에 type을 "checkbox"로 설정
