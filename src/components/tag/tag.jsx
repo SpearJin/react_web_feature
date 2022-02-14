@@ -11,6 +11,9 @@ const Tag = () => {
   const onSubmitTagAdd = (e) => {
     e.preventDefault();
     const text = tagItem.current.value;
+    if (!text) {
+      return;
+    }
     const tags = [...tagList, { id: Date.now(), text }];
     setTagList(tags);
     tagItem.current.value = '';
