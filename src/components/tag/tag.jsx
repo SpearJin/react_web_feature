@@ -11,7 +11,7 @@ const Tag = () => {
   const onSubmitTagAdd = (e) => {
     e.preventDefault();
     const text = tagItem.current.value;
-    if (!text) {
+    if (!text.trim()) {
       return;
     }
     const tags = [...tagList, { id: Date.now(), text }];
